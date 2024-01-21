@@ -1,0 +1,219 @@
+
+nav {
+    background: linear-gradient(to bottom, #f5f5f5, #000000);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif; /* Cambia la familia de fuente */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    margin: 0 1em;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    font-size: 18px; /* Tamaño de la fuente */
+}
+
+nav ul li:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 2em;
+}
+h1{
+    color:#eaeaea;
+}
+h2, h3 {
+    color: #000000;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el mouse */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+button {
+    background: linear-gradient(to bottom, #4CAF50, #45a049); /* Gradiente verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #45a049, #4CAF50); /* Color ligeramente más oscuro al pasar el mouse sobre el botón */
+}
+
+
+footer {
+    background: linear-gradient(to bottom, #333, #1a1a1a); 
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#quienes-somos {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#quienes-somos h2 {
+    margin-bottom: 10px;
+}
+
+#quienes-somos h3 {
+    margin-top: 15px;
+}
+
+#quienes-somos p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #101820;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+:root {
+    --fondo-principal: white;
+    --texto-principal: black;
+}
+
+body {
+    background-color: var(--fondo-principal);
+    color: var(--texto-principal);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tema-oscuro {
+    --fondo-principal: #363537;
+    --texto-principal: #000000;
+}
+
+.tema-rojo {
+    --fondo-principal: #ff4c4c;
+    --texto-principal: #000000;
+}
+
+.tema-azul {
+    --fondo-principal: #4c6eff;
+    --texto-principal: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        font-size: 14px;
+    }
+
+    .banner h2,
+    #quienes-somos h2,
+    #quienes-somos h3,
+    #testimonio h2,
+    #contacto h2 {
+        font-size: 20px;
+    }
+
+    .banner p,
+    #quienes-somos p,
+    #quienes-somos button,
+    #testimonio p {
+        font-size: 14px;
+    }
+
+    #contacto address,
+    footer p {
+        font-size: 12px;
+    }
+
+    #productos h2,
+    .producto h3,
+    .producto p,
+    .producto button {
+        font-size: 16px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+
+.banner img,
+.quienes-somos img,
+.testimonio-item img,
+#contacto iframe {
+    width: 100%;
+    height: auto;
+}

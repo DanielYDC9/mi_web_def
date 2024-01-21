@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Anywhere!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <select id="themeSelector">
+        <option value="claro">Tema Claro</option>
+        <option value="oscuro">Tema Oscuro</option>
+        <option value="rojo">Tema Rojo</option>
+        <option value="azul">Tema Azul</option>
+    </select>
+    <header>
+        <h1>Sports Anywhere!</h1>
+        <img src="IMG/logo.png" alt="Logo" style="width: 600px;">
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <h2>Bienvenido a Tu Tienda de Deporte Online SportsAnywhere!!</h2>
+        <p>Encuentra los mejores productos del deporte al mejor precio!</p>
+        <img src="IMG/sport.img" alt="."style="width: 400px;">
+    </section>
+    <section id="quienes-somos" class="additional-section">
+        <h2>Quiénes Somos</h2>
+        <p>¡Bienvenido a SportsAnywhere!</p>
+        <p>En SportsAnywhere, nos apasiona el deporte y creemos en el poder transformador que tiene en la vida de las personas. Nuestra misión es proporcionarte todo lo que necesitas para llevar tu rendimiento al siguiente nivel, ya seas un atleta experimentado o estés dando tus primeros pasos en el mundo del deporte.</p>
+        
+        <h2>Nuestra Historia</h2>
+        <p>Nacimos de la idea de hacer que los productos deportivos de calidad estén al alcance de todos, en cualquier lugar y en cualquier momento. Con años de experiencia en la industria, hemos creado un espacio donde encontrarás una cuidada selección de artículos que se adaptan a tus necesidades y metas deportivas.</p>
+        
+        <h2>Lo Que Ofrecemos</h2>
+        <p>En SportsAnywhere, ofrecemos una amplia gama de productos de alta calidad para todas las disciplinas deportivas. Desde ropa y calzado hasta accesorios y equipos especializados, trabajamos con las mejores marcas para garantizar que encuentres todo lo que necesitas para destacar en tu deporte favorito.</p>
+        <img src="IMG/istockphoto-1141191007-612x612.jpg" alt="."style="width: 400px;">
+        <h2>Compromiso con la Calidad</h2>
+        <p>Entendemos que cada atleta es único, y es por eso que nos esforzamos por ofrecer productos que no solo cumplen con los estándares más altos de calidad, sino que también se adaptan a tus preferencias y estilo personal.</p>
+        
+        <h2>Servicio al Cliente</h2>
+        <p>En SportsAnywhere, no solo vendemos productos; construimos relaciones duraderas con nuestros clientes. Nuestro equipo de servicio al cliente está aquí para ayudarte en cada paso del camino. Si tienes preguntas, inquietudes o simplemente necesitas asesoramiento, no dudes en ponerte en contacto con nosotros.</p>
+        
+        <p>Gracias por elegir SportsAnywhere como tu destino para productos deportivos de calidad. Estamos emocionados de ser parte de tu viaje deportivo y esperamos acompañarte en cada victoria.</p>
+        <img src="IMG/como_mejorar_el_servicio_al_cliente.jpg" alt="."style="width: 400px;">
+        
+        <p>¡Equípate, entrena y alcanza tus metas con SportsAnywhere!</p>
+    </section>    
+
+    <main>
+    <section id="productos">
+        <h2>PRODUCTOS</h2>
+        
+        <div class="producto" id="Nike Mercurial Zoom Superfly 9 Elite CR7 FG">
+            <h3>Nike Mercurial Zoom Superfly 9 Elite CR7 FG</h3>
+            <img src="https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5293-182_botas-de-futbol-color-blanco-nike-mercurial-zoom-superfly-9-elite-cr7-fg_1_pie-derecho.jpg" style="max-width: 200px;">
+            <p>Precio: 229.99€</p>
+            <button onclick="agregarAlCarrito('Nike Mercurial Zoom Superfly 9 Elite CR7 FG', 10)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" id="Balón Fútbol 11 Mikasa FT 5 Amarillo">
+            <h3>Balón Fútbol 11 Mikasa FT 5 Amarillo</h3>
+            <p>Llévate nuestro Balon Mikasa FT 5! Resistente A La Abrasión y Ideal Para Entrenamiento Y Competición.</p>
+            <img src="https://th.bing.com/th?id=OPE.4T73QYR7e2Dtbw300C300&w=248&h=248&pid=21.1.jpg" style="max-width: 200px;">
+            <p>Precio: 42.45€ </p>
+            <button onclick="agregarAlCarrito('Balón Fútbol 11 Mikasa FT 5 Amarillo', 20)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" id="Reloj Inteligente GPS Kiprun 500 By Coros negro">
+            <h3>Reloj Inteligente GPS Kiprun 500 By Coros negro </h3>
+            <p>Compra ahora este Reloj Acuatico Reloj Inteligente GPS Kiprun 500 color negro ahora!</p>
+            <img src="https://contents.mediadecathlon.com/p2141791/k$a63545fa07fe1fc241eae60df6fa68fe/sq/reloj-inteligente-gps-kiprun-500-by-coros-negro.jpg?format=auto&f=800x0.jpg" style="max-width: 200px;">
+            <p>Precio: 109.99€ </p>
+            <button onclick="agregarAlCarrito('Reloj Inteligente GPS Kiprun 500 By Coros negro', 20)">Agregar al Carrito</button>
+        </div>
+        <div class="producto" id="Bose QuietComfort">
+            <h3>Bose QuietComfort Ultra Earbuds Auriculares Inalámbricos con Cancelación de Ruido Negros</h3>
+            <img src="https://thumb.pccomponentes.com/w-530-530/articles/1079/10791152/1561-bose-quietcomfort-ultra-earbuds-auriculares-inalambricos-con-cancelacion-de-ruido-negros-foto.jpg" style="max-width: 200px;">
+            <p>Precio: 321.99€ </p>
+            <button onclick="agregarAlCarrito('Bose QuietComfort', 20)">Agregar al Carrito</button>
+        </div>
+        <div id="formularioProducto" style="display: none;">
+            <h2 id="formTitle">Agregar Producto</h2>
+            <form id="productoForm">
+                <input type="hidden" id="productoId" name="productoId" value="">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+                
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" name="precio" required>
+                
+                <label for="imagenURL">Imagen URL:</label>
+                <input type="text" id="imagenURL" name="imagenURL" required>
+                
+                <button type="button" onclick="guardarProducto()">Guardar</button>
+                <button type="button" onclick="cerrarFormulario()">Cancelar</button>
+            </form>
+        </div>
+        
+        <button onclick="mostrarFormularioAgregar()">Agregar Producto</button>
+    </section>
+    
+    </section>
+    <section id="carrito">
+    <h2>Carrito</h2>
+    <div id="itemsCarrito"></div>
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    <button onclick="realizarPago()">Pagar</button>
+    </section>
+    </main>
+
+
+    <section id="testimonio" class="additional-section">
+        <h2>Evalúanos!</h2>
+        <div class="testimonio-item">
+            <img src="https://whaticket.com/wp-content/uploads/2022/06/%C2%BFQue%CC%81-es-un-Cliente-Satisfecho-y-co%CC%81mo-obtenerlos_-.png.webp" alt="Haga nuestra encuesta!" style="max-width: 500px;">
+            <p>Nos gustaría saber vuestra satisfacción con sus compras con esta encuesta:</p>
+            <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeDKRge5kuxkBA_lxFj-gL8MdFdlvpGZW6jRdriqXoQ9mghnA/viewform?usp=sf_link'">Ir a la Encuesta</button>
+
+        </div>
+    </section>
+    
+    
+    <section id="contacto" class="additional-section">
+        <h2>Contacto</h2>
+        <p>Estamos ubicados en:</p>
+        <address>
+            Dirección: C. Consuegra, 3, 28036 Madrid
+        </address>
+        <div id="googleMap">
+            <iframe
+                width="100%"
+                height="300"
+                frameborder="0"
+                style="border:0"
+                src="https://maps.app.goo.gl/xJPgwiyJtAV6PWyd6"
+            ></iframe>
+        </div>
+    </section>
+    
+    
+    
+    <footer>
+        <p>&copy; SportsAnywhere necesita aprobar 2024</p>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
+
+
